@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="h-[100%] bg-[#5546DC] px-20 py-10">
+      <!-- navbar -->
+      <div class="navbar flex justify-around">
+        <div class="logo">
+          <img src="./Logo.svg" alt="" />
+        </div>
+        <div class="text-white flex gap-10 ml-20">
+          <h6>Platform</h6>
+          <h6>Use Cases</h6>
+          <h6>Why We?</h6>
+          <h6>Pricing</h6>
+          <h6>Resources</h6>
+        </div>
+        <div class="buttons flex end gap-10 text-white">
+          <div class="language flex">
+            Eng <img src="./dropicon.svg" alt="" />
+          </div>
+          <div class="language">|</div>
+          <div
+            class="loginbutton bg-[#5546DC] px-5 flex justify-center align-middle border rounded-xl"
+          >
+            Login
+          </div>
+        </div>
+      </div>
+      <!-- navbar End -->
+      <div class="main flex justify-around">
+        <!-- content Left -->
+
+        <div class="mainLeft mt-10 text-white w-3/5">
+          <h6>Welcome to Hoora!</h6>
+          <div class="text-8xl font-bold">
+            Revolutionize Work with Our AI-Powered HR Platform
+          </div>
+          
+          <h5 class="mt-5">
+            Hire and manage remote teams with the world’s most cost-effective
+            HRIS and Payroll platform. Leverage Hera, your AI-powered HR
+            assistant within the platform, to make better HR decisions and drive
+            strategic decisions.
+          </h5>
+
+          <div
+            class="loginbuttonmain flex justify-around mb-12 rounded-xl loginbutton bg-[rgba(255, 255, 255, 0.20)] mt-5 w-[150px] px-5 py-2 flex justify-center align-middle border"
+          >
+            <div class="text-sm">Get Started</div>
+            <img class="h-[20px]" src="./arrow-right-solid.svg" alt="" />
+          </div>
+        </div>
+        <!-- content Left End -->
+
+        <!-- content Right -->
+
+        <div class="right-main w-3/5">
+          <div class="left absolute justify-center">
+            <div class="upperimagemain flex">
+              <div class="upper">
+                <img
+                  class="h-[250px] mt-44  rounded-xl"
+                  src="Screenshot 2023-11-24 105532.png"
+                  alt=""
+                />
+                <img
+                  class="h-[200px] mt-4 mr-10 rounded-xl"
+                  src="Screenshot 2023-11-24 105532.png"
+                  alt=""
+                />
+              </div>
+
+              <img
+                class="h-[200px] mt-48 rounded-xl"
+                src="Screenshot 2023-11-24 105532.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="mainimage flex justify-center align-middle">
+            <img
+              class="h-[500px] mt-16 rounded-xl"
+              src="Screenshot 2023-11-24 105532.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <!-- content Right End -->
+      </div>
+
+
+      
+    </div>
+    <button id="playSoundBtn">Play Sound</button>
+
+<audio id="notificationSound">
+    <source src="C:\Users\HP\Downloads\notification.mp3" type="audio/mp3">
+    <!-- Add additional source elements for different audio formats if needed -->
+    Your browser does not support the audio tag.
+</audio>
+
+<script>
+    document.getElementById('playSoundBtn').addEventListener('click', function() {
+        var sound = document.getElementById('notificationSound');
+        sound.play();
+    });
+    </script>
+  </body>
+</html>
